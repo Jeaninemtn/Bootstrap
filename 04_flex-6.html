@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex and Flex</title>
+    <style>
+        .container {
+            width: 800px;
+            height: 450px;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            outline: 1px solid rgb(219, 74, 142);
+        }
+        .box1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* We can use a second flex to make the content horizonally and vertically center */
+            /* Because a Flex can't control the child of the child XD  */
+            /* So we can put a Flex on the child to control its own child */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">BOX1</div>
+        <div class="box box2">BOX2</div>
+        <div class="box box3">BOX3</div>
+    </div>
+</body>
+</html>

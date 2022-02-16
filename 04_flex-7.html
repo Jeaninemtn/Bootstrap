@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Wrap</title>
+    <style>
+        .container {
+            width: 800px;
+            height: 450px;
+            background-color: antiquewhite;
+            display: flex;
+            /* justify-content: space-between; */
+            flex-wrap: wrap;
+
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(150, 215, 231);
+            outline: 1px solid rgb(51, 131, 155);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX1</div>
+        <div class="box">BOX2</div>
+        <div class="box">BOX3</div>
+        <div class="box">BOX4</div>
+        <div class="box">BOX5</div>
+        <div class="box">BOX6</div>
+    </div>
+</body>
+</html>

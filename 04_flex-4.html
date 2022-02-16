@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Grow and Shrink</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .container1 {
+            width: 800px;
+            height: 400px;
+            background-color: beige;
+            display: flex;
+
+        }
+
+        .box {
+            /* width: 100px; */
+            width: 400px;
+            height: 200px;
+            background-color: rgb(201, 200, 255);
+            outline: 1px solid rgb(56, 26, 87);
+            flex-grow: 1;
+            /* flex-shrink: 1; */
+        }
+
+        /* .boxa {
+            flex-grow: 0;
+        } */
+
+        .boxb {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="box boxa">BOX1</div>
+        <div class="box boxb">BOX2</div>
+        <div class="box boxc">BOX3</div>
+    </div>
+    <!-- <div class="container2">
+        <div class="box">BOX1</div>
+        <div class="box">BOX2</div>
+        <div class="box">BOX3</div>
+    </div>
+    <div class="container3">
+        <div class="box">BOX1</div>
+        <div class="box">BOX2</div>
+        <div class="box">BOX3</div>
+    </div> -->
+</body>
+
+</html>
