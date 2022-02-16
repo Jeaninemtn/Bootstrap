@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-2</title>
+    <style>
+        .container {
+            display: grid;
+            /* width: 800px; */
+            height: 400px;
+            background-color: rgb(175, 240, 220);
+            grid-template-columns: 200px auto;
+            grid-template-rows: 100px 200px auto;
+            grid-template-areas: 
+            "header header"
+            "menu content"
+            "footer footer";
+        }
+        .header {
+            grid-area: header;
+        }
+        .menu {
+            grid-area: menu;
+        }
+        .content {
+            grid-area: content;
+        }
+        .footer {
+            grid-area: footer;
+        }
+        div {
+            outline: 1px solid rgb(57, 149, 172);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="menu">MENU</div>
+        <div class="content">CONTENT</div>
+        <div class="footer">FOOTER</div>
+    </div>
+</body>
+</html>
