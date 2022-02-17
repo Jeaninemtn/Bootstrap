@@ -12,24 +12,25 @@
             height: 450px;
             background-color: antiquewhite;
             display: flex;
-            /* justify-content: center; */
-            /* justify-content: space-evenly; */
-            /* justify-content: space-around; */
-            justify-content: space-between;
         }
         .box {
             width: 200px;
             height: 200px;
-            background-color: pink;
-            outline: 1px solid rgb(219, 74, 142);
-            
-            flex-basis: 300px;
-            flex-shrink: 1;
-            /* max-width&min-width>flex-basis>width>content  */
+            background-color: rgb(252, 214, 220);
+            outline: 1px solid rgb(0, 0, 0);
+        }
+        .box1 {
+            flex-basis: auto;
+            /* It works as the same value of the width we set on the box */
         }
         .box2 {
-            flex-basis: 150px;
+            flex-basis: 0;
+            /* No width (Only the width of the content left) */
         }
+        .box3 {
+            flex-basis: 400px;
+        }
+        /* max-width&min-width>flex-basis>width>content  */
     </style>
 </head>
 

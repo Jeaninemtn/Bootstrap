@@ -13,50 +13,85 @@
             text-align: center;
         }
 
-        .container1 {
+        .container {
             width: 800px;
             height: 400px;
             background-color: beige;
             display: flex;
-
+            margin-bottom: 20px;
         }
 
         .box {
-            /* width: 100px; */
-            width: 400px;
+            width: 200px;
             height: 200px;
-            background-color: rgb(201, 200, 255);
-            outline: 1px solid rgb(56, 26, 87);
-            flex-grow: 1;
-            /* flex-shrink: 1; */
+            background-color: rgb(253, 211, 239);
+            outline: 1px solid rgb(56, 26, 87);     
         }
-
-        /* .boxa {
+        /* ------------- GROW ------------- */
+        .flex-grow-1 .box {
+            flex-grow: 1;
+        }
+        .flex-grow-2 .box1 {
             flex-grow: 0;
-        } */
-
-        .boxb {
+        }
+        .flex-grow-2 .box2 {
+            flex-grow: 1;
+        }
+        .flex-grow-2 .box3 {
+            flex-grow: 2;
+        }
+        /* ------------ SHRINK ------------ */
+        .flex-shrink-1 .box, .flex-shrink-2 .box {
+            width: 400px;
+            /* Need to larger the width to show the effect of the value:shrink */
+        }
+        .flex-shrink-1 {
+            flex-shrink: 1;
+        }
+        .flex-shrink-2 {
+            flex-shrink: 1;
+        }
+        .flex-shrink-2 .box1 {
             flex-shrink: 0;
         }
+        .flex-shrink-2 .box2 {
+            flex-shrink: 1;
+        }
+        .flex-shrink-2 .box3 {
+            flex-shrink: 2;
+        }
+        
     </style>
 </head>
 
 <body>
-    <div class="container1">
-        <div class="box boxa">BOX1</div>
-        <div class="box boxb">BOX2</div>
-        <div class="box boxc">BOX3</div>
-    </div>
-    <!-- <div class="container2">
+    <!-- -------- Default -------- -->
+    <div class="container">
         <div class="box">BOX1</div>
         <div class="box">BOX2</div>
         <div class="box">BOX3</div>
     </div>
-    <div class="container3">
+    <!-- ------------------------- -->
+    <div class="container flex-grow-1">
         <div class="box">BOX1</div>
         <div class="box">BOX2</div>
         <div class="box">BOX3</div>
-    </div> -->
+    </div>
+    <div class="container flex-grow-2">
+        <div class="box box1">BOX1</div>
+        <div class="box box2">BOX2</div>
+        <div class="box box3">BOX3</div>
+    </div>
+    <div class="container flex-shrink-1">
+        <div class="box">BOX1</div>
+        <div class="box">BOX2</div>
+        <div class="box">BOX3</div>
+    </div>
+    <div class="container flex-shrink-2">
+        <div class="box box1">BOX1</div>
+        <div class="box box2">BOX2</div>
+        <div class="box box3">BOX3</div>
+    </div>
 </body>
 
 </html>

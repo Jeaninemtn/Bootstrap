@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,28 +12,67 @@
             font-size: 1.2rem;
             text-align: center;
         }
+
         .container {
             width: 800px;
-            height: 700px;
+            /* width: 500px; */
+            height: 300px;
+            /* height: 700px; */
             background-color: rgb(218, 218, 218);
             display: flex;
-            /* flex-direction: row; */
-            /* flex-direction: column; */
-            /* flex-direction: column-reverse; */
-            /* flex-direction: row-reverse; */
+            margin-bottom: 20px;
         }
+
         .box {
             width: 200px;
             height: 200px;
             background-color: rgb(205, 255, 185);
         }
+
+        /* Depend on the size of the container and the flex-direction property, the box might be transformed to different size */
+
+        .flex-direction-row {
+            flex-direction: row;
+            /* Default */
+        }
+
+        .flex-direction-column {
+            flex-direction: column;
+        }
+
+        .flex-direction-row-reverse {
+            flex-direction: column-reverse;
+            /* Notice the order of the boxes */
+        }
+
+        .flex-direction-column-reverse {
+            flex-direction: row-reverse;
+            /* Notice the order of the boxes */
+        }
     </style>
 </head>
+
 <body>
-    <div class="container">
+    <div class="container flex-direction-row">
+        <div class="box">BOX1</div>
+        <div class="box">BOX2</div>
+        <div class="box">BOX3</div>
+    </div>
+    <div class="container flex-direction-column">
+        <div class="box">BOX1</div>
+        <div class="box">BOX2</div>
+        <div class="box">BOX3</div>
+    </div>
+    <div class="container flex-direction-row-reverse">
+        <div class="box">BOX1</div>
+        <div class="box">BOX2</div>
+        <div class="box">BOX3</div>
+    </div>
+    <div class="container flex-direction-column-reverse">
         <div class="box">BOX1</div>
         <div class="box">BOX2</div>
         <div class="box">BOX3</div>
     </div>
 </body>
+
 </html>
