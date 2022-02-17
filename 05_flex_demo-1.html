@@ -13,22 +13,42 @@
         /* * {
             outline: 1px solid #555;
         } */
+
+        .mb-100 {
+            margin-bottom: 100px;
+        }
+
+        .justify-content-between {
+            justify-content: space-between;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order:2;
+        }
+
+
+
         .container {
             width: 960px;
-            /* background-color: beige; */
             margin: auto;
         }
 
+           
         .row {
             display: flex;
-            justify-content: space-between;
         }
 
         .nav-left,
         .logo,
         .nav-right {
             width: 33.33%;
-            /* outline: 1px solid #777; */
             display: flex;
             align-items: center;
         }
@@ -64,12 +84,25 @@
             object-fit: cover;
 
         }
+
+        .product-model {
+            width: 55%;
+        }
+
+        .img-wrap-model {
+            width: 100%;
+        }
+        .img-wrap-model img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 
 <body>
     <nav class="container">
-        <div class="row">
+        <div class="row mb-100">
             <div class="nav-left">
                 <a href="#">Shop</a>
                 <a href="#">Lookbook</a>
@@ -87,7 +120,7 @@
         </div>
     </nav>
     <main class="container">
-        <div class="row">
+        <div class="row justify-content-between mb-100">
             <div class="item">
                 <div class="img-wrap">
                     <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1560524204746-2X3ZGWZJOG5OJ1FVUPEV/kimem-poplin-chef-shirt-white_0304-v1-FINAL-copy.jpg?format=750w"
@@ -110,7 +143,58 @@
                 <p>Poplin Chef Shirt</p>
             </div>
         </div>
+        <div class="row justify-content-center mb-100">
+            <span>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi magni asperiores ad eligendi rem sunt.
+            </span>
+        </div>
+        <div class="row justify-content-between mb-100">
+            <div class="product-info order-1">
+                <div class="img-wrap">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1560524204746-2X3ZGWZJOG5OJ1FVUPEV/kimem-poplin-chef-shirt-white_0304-v1-FINAL-copy.jpg?format=750w"
+                        alt="">
+                </div>
+                <p>Poplin Chef Shirt</p>
+                <p>$50.00</p>
+            </div>
+            <div class="product-model order-2">
+                <div class="img-wrap-model">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1565886246510-UHTRW1MHGGQID6D6ZUA0/lauren-winter-20150715-IMG_7316-v1-FINAL.jpg?format=2500w" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-between mb-100">
+            <div class="product-info order-2">
+                <div class="img-wrap">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1560524204746-2X3ZGWZJOG5OJ1FVUPEV/kimem-poplin-chef-shirt-white_0304-v1-FINAL-copy.jpg?format=750w"
+                        alt="">
+                </div>
+                <p>Poplin Chef Shirt</p>
+                <p>$50.00</p>
+            </div>
+            <div class="product-model order-1">
+                <div class="img-wrap-model">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1565886246510-UHTRW1MHGGQID6D6ZUA0/lauren-winter-20150715-IMG_7316-v1-FINAL.jpg?format=2500w" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-between mb-100">
+            <div class="product-info order-1">
+                <div class="img-wrap">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1560524204746-2X3ZGWZJOG5OJ1FVUPEV/kimem-poplin-chef-shirt-white_0304-v1-FINAL-copy.jpg?format=750w"
+                        alt="">
+                </div>
+                <p>Poplin Chef Shirt</p>
+                <p>$50.00</p>
+            </div>
+            <div class="product-model order-2">
+                <div class="img-wrap-model">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1565886246510-UHTRW1MHGGQID6D6ZUA0/lauren-winter-20150715-IMG_7316-v1-FINAL.jpg?format=2500w" alt="">
+                </div>
+            </div>
+        </div>  
     </main>
+
 </body>
 
 </html>
