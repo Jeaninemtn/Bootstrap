@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .nav-right {
+            display: none;
+            
+        }
+        
+        @media screen and (min-width:600px) {
+            .mobile-btn {
+                display: none;
+            }
+            .nav-right {
+                display: flex;
+                flex-grow: 1;
+            }
+            .nav-right ul {
+            display: flex;
+            padding-left: 0;
+            list-style-type: none;
+            margin-left: 40px;
+            margin-right: auto;
+            font-size: 0.8rem;
+
+            }
+            .nav-right ul li a {
+                text-decoration: none;
+                color: #000;
+                margin-right: 10px;
+            }
+            form {
+                display: flex;
+                align-items: center;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">LOGO</div>
+        <div class="mobile-btn">三</div>
+        <div class="nav-right">
+            <ul>
+                <li>
+                    <a href="#">Link</a>
+                </li>
+                <li>
+                    <a href="#">Link</a>
+                </li>
+                <li>
+                    <a href="#">Link</a>
+                </li>
+                <li>
+                    <a href="#">Link</a>
+                </li>
+            </ul>
+            <form action="">
+                <input type="text">
+                <button></button>
+            </form>
+        </div>
+        
+    </nav>
+</body>
+</html>
